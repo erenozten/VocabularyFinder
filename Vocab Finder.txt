@@ -142,7 +142,7 @@
           color:#6c5a5a !important;
         }
       </style>
-            <input class="submit theButton wrapper" onclick="openTabEnglishSmall()" style="" type="submit" value="ENGLISH -XSMALL-" />
+      <input class="submit theButton wrapper" onclick="openTabEnglishSmall()" style="" type="submit" value="ENGLISH -XSMALL-" />
       <input class="submit theButton wrapper" onclick="openTabEnglishBig()" style="" type="submit" value="ENGLISH -XLARGE-" />
       <input class="submit theButton wrapper" onclick="openTabSpanish()" style="" type="submit" value="SPANISH" />
       <input class="submit theButton wrapper" onclick="openTabFive()" style="" type="submit" value="TURKISH">
@@ -153,11 +153,14 @@
       <input class="submit theButton wrapper" onclick="openTabThree()" style="" type="submit" value="Other 2">
 -->
     </div>
-    <br /><br /><br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div>
-      <span style="color: #471d1d;" class="textColor">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) <span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
-        <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
-      <br> <span><span style="color #471d1d" class="textColor">Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
+    <span style="color: #471d1d;" class="textColor">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) <span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
+     <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
+     <br> <span><span style="color #471d1d" class="textColor">Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
     </div>
 
     <script>
@@ -178,7 +181,6 @@
       });
       document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
     
-
     
       function focusInBosalt() {
 document.getElementById("theWord").value = "";
@@ -202,8 +204,7 @@ document.getElementById("theWord").value = "";
         var getWord = document.getElementById('theWord').value;
         var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
         var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
-        var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
- 
+        var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853'); 
       }
 
       function openTabThree(url) {
@@ -217,23 +218,17 @@ document.getElementById("theWord").value = "";
 
       function openTabGerman(url) {
         var getWord = document.getElementById('theWord').value;
-
         var win = window.open('https://translate.google.com/#de/en/' + getWord);
-
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
         var win = window.open('https://dictionary.cambridge.org/dictionary/german-english/' + getWord); 
         var win = window.open('https://en.langenscheidt.com/german-english/' + getWord +'#sense-1.3.1');
         var win = window.open('https://www.linguee.com/english-german/search?source=auto&query=' + getWord);
         var win = window.open('https://tatoeba.org/deu/sentences/search?query=' + getWord + '&from=deu&to=eng');
-
         var win = window.open('https://www.dwds.de/r?q=' + getWord + '&corpus=kern&date-start=1900&date-end=1999&genre=Belletristik&genre=Wissenschaft&genre=Gebrauchsliteratur&genre=Zeitung&format=full&sort=date_desc&limit=10');
-
-
       }
 
       function openTabFive(url) {
         var getWord = document.getElementById('theWord').value;
-
         var tdk = window.open('http://www.tdk.gov.tr/index.php?option=com_gts&kelime=' + getWord);
         var wiktionary = window.open('https://tr.wiktionary.org/wiki/' + getWord);
         var nedir = window.open('http://www.nedir.com/' + getWord);
@@ -244,35 +239,23 @@ document.getElementById("theWord").value = "";
 
       function openTabSpanish(url) {
         var getWord = document.getElementById('theWord').value;
-
         var win = window.open('https://www.spanishdict.com/translate/' + getWord);
-
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
-
         var win2 = window.open('https://translate.google.com/#view=home&op=translate&sl=es&tl=en&text=' + getWord);
         var win2 = window.open('https://www.collinsdictionary.com/dictionary/spanish-english/' + getWord);
-
         var win2 = window.open('https://www.linguee.com/english-spanish/search?source=auto&query=' + getWord);
         var win2 = window.open(' https://www.wordreference.com/es/en/translation.asp?spen=' + getWord);
-
         var win = window.open('https://www.spanishdict.com/examples/' + getWord);
-
         var win = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=spa&to=eng');
-
       }
       
 
       function openTabFrench(url) {
         var getWord = document.getElementById('theWord').value;
-
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
-
         var win2 = window.open('https://www.linguee.com/french-english/search?source=auto&query=' + getWord);
-        
         var win2 = window.open('https://www.wordreference.com/fren/' + getWord);  
-
         var win2 = window.open('https://translate.google.com/#view=home&op=translate&sl=fr&tl=en&text=' + getWord);
-
         var win = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=fra&to=eng');
       }
 
@@ -421,8 +404,8 @@ document.getElementById("theWord").value = "";
             </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <div>
-              <span style="color: #471d1d;">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) <span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
-                <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
+              <span style="color: #471d1d;">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility)<span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
+              <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
               <br> <span><span style="color #471d1d" >Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
             </div>
 
@@ -443,9 +426,11 @@ document.getElementById("theWord").value = "";
                 });
               });
               document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
+
               function focusOutDoldur() {
                 document.getElementById("theWord").setAttribute("value", "word");
               }
+
               function focusInBosalt() {
                 document.getElementById("theWord").setAttribute("value", "");
               }
@@ -467,10 +452,10 @@ document.getElementById("theWord").value = "";
               function openTabTwo(url) {
                 var getWord = document.getElementById('theWord').value;
                 var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
-                //        var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
+                //var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
                 var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
-                //        var win2 = window.open('https://www.etymonline.com/search?q=' + getWord);
-                //        var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+                //var win2 = window.open('https://www.etymonline.com/search?q=' + getWord);
+                //var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
                 var win2 = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
                 var win2 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
                 var win2 = window.open('http://www.thefreedictionary.com/' + getWord);
@@ -484,11 +469,11 @@ document.getElementById("theWord").value = "";
                 var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
                 var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
               }
-            </script>     </body>
+            </script>     
+	  </body>
         </html>
         </div>
       </xmp>
-
   </body>
 </html>
 
