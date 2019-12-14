@@ -4,6 +4,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
+
   <body>
     <div class="grayBg" style="height: 535px; margin-left: 0px; border:1px solid blue;">
       <div class="theLabel">
