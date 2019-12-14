@@ -16,7 +16,7 @@
         <label class="theLabel">Status</label>
         <select id="" name="country" class="theLabel">
           <option disabled="" selected="">Are you feeling lucky?</option>
-          <option value="">I found 10$ on the ground at work</option>
+          <option value="">I've just found 10$ on the ground at work</option>
           <option value="">I'm Feeling Lucky</option>
         </select>
       </div>
@@ -146,12 +146,12 @@
       <input class="submit theButton wrapper" onclick="openTabEnglishSmall()" style="" type="submit" value="ENGLISH -XSMALL-" />
       <input class="submit theButton wrapper" onclick="openTabEnglishBig()" style="" type="submit" value="ENGLISH -XLARGE-" />
       <input class="submit theButton wrapper" onclick="openTabSpanish()" style="" type="submit" value="SPANISH" />
-      <input class="submit theButton wrapper" onclick="openTabFive()" style="" type="submit" value="TURKISH">
       <input class="submit theButton wrapper" onclick="openTabGerman()" style="" type="submit" value="GERMAN">
       <input class="submit theButton wrapper" onclick="openTabFrench()" style="" type="submit" value="FRENCH" />
-<!--
-      <input class="submit theButton wrapper" onclick="openTabTwo()" style="" type="submit" value="Other">
-      <input class="submit theButton wrapper" onclick="openTabThree()" style="" type="submit" value="Other 2">
+      <input class="submit theButton wrapper" onclick="openTabTurkish()" style="" type="submit" value="TURKISH">
+      <!--
+<input class="submit theButton wrapper" onclick="openTabTwo()" style="" type="submit" value="Other">
+<input class="submit theButton wrapper" onclick="openTabThree()" style="" type="submit" value="Other 2">
 -->
     </div>
     <br />
@@ -159,9 +159,9 @@
     <br />
     <br />
     <div>
-    <span style="color: #471d1d;" class="textColor">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) <span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
-     <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
-     <br> <span><span style="color #471d1d" class="textColor">Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
+      <span style="color: #471d1d;" class="textColor">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) <span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
+        <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
+      <br> <span><span style="color #471d1d" class="textColor">Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
     </div>
 
     <script>
@@ -180,12 +180,12 @@
           }
         });
       });
-      document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
-    
-      function focusInBosalt() {
-document.getElementById("theWord").value = "";
+      //      document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
 
-        console.log("asdf");
+      function focusInBosalt() {
+        document.getElementById("theWord").value = "";
+
+        console.log("Testing");
       }
 
       function openTabEnglishBig(url) {
@@ -227,7 +227,7 @@ document.getElementById("theWord").value = "";
         var win = window.open('https://www.dwds.de/r?q=' + getWord + '&corpus=kern&date-start=1900&date-end=1999&genre=Belletristik&genre=Wissenschaft&genre=Gebrauchsliteratur&genre=Zeitung&format=full&sort=date_desc&limit=10');
       }
 
-      function openTabFive(url) {
+      function openTabTurkish(url) {
         var getWord = document.getElementById('theWord').value;
         var tdk = window.open('http://www.tdk.gov.tr/index.php?option=com_gts&kelime=' + getWord);
         var wiktionary = window.open('https://tr.wiktionary.org/wiki/' + getWord);
@@ -248,7 +248,7 @@ document.getElementById("theWord").value = "";
         var win = window.open('https://www.spanishdict.com/examples/' + getWord);
         var win = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=spa&to=eng');
       }
-      
+
       function openTabFrench(url) {
         var getWord = document.getElementById('theWord').value;
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
@@ -404,7 +404,7 @@ document.getElementById("theWord").value = "";
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <div>
               <span style="color: #471d1d;">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility)<span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
-              <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
+                <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
               <br> <span><span style="color #471d1d" >Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
             </div>
 
@@ -425,12 +425,13 @@ document.getElementById("theWord").value = "";
                 });
               });
 
-              document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
+              //document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
 
+              /*
               function focusOutDoldur() {
                 document.getElementById("theWord").setAttribute("value", "word");
               }
-
+              */
               function focusInBosalt() {
                 document.getElementById("theWord").setAttribute("value", "");
               }
@@ -470,7 +471,7 @@ document.getElementById("theWord").value = "";
                 var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
               }
             </script>     
-	  </body>
+          </body>
         </html>
         </div>
       </xmp>
