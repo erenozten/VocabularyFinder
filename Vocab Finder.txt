@@ -182,7 +182,6 @@
       });
       document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
     
-    
       function focusInBosalt() {
 document.getElementById("theWord").value = "";
 
@@ -250,7 +249,6 @@ document.getElementById("theWord").value = "";
         var win = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=spa&to=eng');
       }
       
-
       function openTabFrench(url) {
         var getWord = document.getElementById('theWord').value;
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
@@ -426,6 +424,7 @@ document.getElementById("theWord").value = "";
                   }
                 });
               });
+
               document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
 
               function focusOutDoldur() {
