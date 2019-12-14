@@ -81,11 +81,11 @@
           }
         });
       });
-      //      document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
+
+      //document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
 
       function focusInBosalt() {
         document.getElementById("theWord").value = "";
-
         console.log("Testing");
       }
 
@@ -160,9 +160,7 @@
         var win2 = window.open('https://translate.google.com/#view=home&op=translate&sl=fr&tl=en&text=' + getWord);
         var win = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=fra&to=eng');
       }
-
     </script>
-    
 
     <style>
 
@@ -426,7 +424,6 @@
               </style>
 
               <input class="submit theButton wrapper" onclick="openTab()" style="" type="submit" value="Find (MORE)" />
-              
               <input class="submit theButton wrapper" onclick="openTabTwo()" style="" type="submit" value="Find (less)">
               
             </div>
@@ -445,9 +442,7 @@
                   here
                 </span> 
               </span>
-              
               <br /> 
-              
               <span>
                 <span style="color #471d1d" >Or
                 </span> 
