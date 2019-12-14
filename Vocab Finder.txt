@@ -21,128 +21,6 @@
         </select>
       </div>
 
-      <style>
-
-        a:-webkit-any-link {
-          color: -webkit-link;
-          cursor: pointer;
-          text-decoration: none;
-        }
-        pre, xmp, plaintext, listing {
-          display: block;
-          font-family: monospace;
-          white-space: pre;
-          margin: 1em 0px;
-          transition: color 5s ease-in-out;
-          -moz-transition: color 5s ease-in-out;
-          text-decoration: none;
-          -webkit-animation: zomg 7s infinite;
-          animation: zomg 11s infinite;
-        }
-        .wrapper { 
-          height: 11%;
-          width: 11%;
-          left:0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          height: 45px;
-          background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-          background-size: 1800% 1800%;
-          -webkit-animation: rainbow 18s ease infinite;
-          -z-animation: rainbow 18s ease infinite;
-          -o-animation: rainbow 18s ease infinite;
-          animation: rainbow 18s ease infinite;}
-        @-webkit-keyframes rainbow {
-          0%{background-position:0% 82%}
-          50%{background-position:100% 19%}
-          100%{background-position:0% 82%}
-        }
-        @-moz-keyframes rainbow {
-          0%{background-position:0% 82%}
-          50%{background-position:100% 19%}
-          100%{background-position:0% 82%}
-        }
-        @-o-keyframes rainbow {
-          0%{background-position:0% 82%}
-          50%{background-position:100% 19%}
-          100%{background-position:0% 82%}
-        }
-        @keyframes rainbow { 
-          0%{background-position:0% 82%}
-          50%{background-position:100% 19%}
-          100%{background-position:0% 82%}
-        }
-        .theButton{
-          margin-top: 14px;
-          background-color:skyblue !important;
-        }
-        .theButton:hover{
-          text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-          -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-          -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-          transition: all 0.4s ease 0s;
-          background-color:#e10505 !important;
-        }
-        .theLabel{
-          transition: color 5s ease-in-out;
-          -moz-transition: color 5s ease-in-out;
-          text-decoration: none;
-          -webkit-animation: zomg 7s infinite;
-          animation: zomg 11s infinite;
-        }
-        @-webkit-keyframes zomg {
-          0%, 100% { color: #7ccdea; }
-          16%      { color: #0074d9; }
-          32%      { color: #2ecc40; }
-          48%      { color: #ffdc00; }
-          64%      { color: #b10dc9; }
-          80%      { color: #ff4136; }
-        }
-        @keyframes zomg {
-          0%, 100% { color: #7ccdea; }
-          16%      { color: #0074d9; }
-          32%      { color: #2ecc40; }
-          48%      { color: #ffdc00; }
-          64%      { color: #b10dc9; }
-          80%      { color: #ff4136; }
-        }
-        input[type=text], select {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          border-radius: 4px;
-          box-sizing: border-box;
-        }
-        .submit {
-          width: 100%;
-          background-color: #A10000;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-        }
-        .submit:hover {
-          background-color: #921010;
-        }
-        .grayBg {
-          border-radius: 5px;
-          padding: 20px;
-        }
-        #haktext{
-          color:white;
-        }
-        element.style {
-          color: #6c5a5a !important;
-        }
-        .textColor{
-          color:#6c5a5a !important;
-        }
-      </style>
       <input class="submit theButton wrapper" onclick="openTabEnglishSmall()" style="" type="submit" value="ENGLISH -XSMALL-" />
       <input class="submit theButton wrapper" onclick="openTabEnglishBig()" style="" type="submit" value="ENGLISH -XLARGE-" />
       <input class="submit theButton wrapper" onclick="openTabSpanish()" style="" type="submit" value="SPANISH" />
@@ -158,11 +36,34 @@
     <br />
     <br />
     <br />
+    
     <div>
-      <span style="color: #471d1d;" class="textColor">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) <span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
-        <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
-      <br> <span><span style="color #471d1d" class="textColor">Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
+      <span style="color: #471d1d;" class="textColor">
+        You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) 
+        <span class="theLabel" style="font-style:italic">
+          I'm not clunky anymore!
+        </span>
+        <br><br> 
+        See source code 
+        <span style="color:#E32E2E" class="theLabel" id ="textHere">
+          here
+        </span> 
+      </span>
+      
+      <br> 
+      <span>
+      <span style="color #471d1d" class="textColor">
+        Or
+      </span> 
+      <a href="https://jsfiddle.net/erenozten/mf60z5kr/4/" target="_blank">
+      <span style="text-decoration:none !important" class="theLabel">
+        here
+        </span>
+        </a> 
+      </span>
     </div>
+    
+    <div id="theDiv" style="color: #4ef129; display: none;">
 
     <script>
       var sayi = 0;
@@ -190,19 +91,21 @@
 
       function openTabEnglishBig(url) {
         var getWord = document.getElementById('theWord').value;
-        var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
-        var win2 = window.open('https://www.etymonline.com/search?q=' + getWord);
-        var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
-        var win2 = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
-        var win2 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
-        var win2 = window.open('http://www.thefreedictionary.com/' + getWord);
+        var win = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+        var win = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
+        var win = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
+        var win = window.open('http://www.thefreedictionary.com/' + getWord);
         var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
       }
 
       function openTabEnglishSmall(url) {
         var getWord = document.getElementById('theWord').value;
-        var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win = window.open('https://www.vocabulary.com/dictionary/' + getWord);
         var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853'); 
       }
@@ -212,8 +115,8 @@
         var win = window.open('https://translate.google.com/#en/tr/' + getWord);
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
         var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
-        var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
-        var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+        var win = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win = window.open('https://www.vocabulary.com/dictionary/' + getWord);
       }
 
       function openTabGerman(url) {
@@ -241,10 +144,10 @@
         var getWord = document.getElementById('theWord').value;
         var win = window.open('https://www.spanishdict.com/translate/' + getWord);
         var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
-        var win2 = window.open('https://translate.google.com/#view=home&op=translate&sl=es&tl=en&text=' + getWord);
-        var win2 = window.open('https://www.collinsdictionary.com/dictionary/spanish-english/' + getWord);
-        var win2 = window.open('https://www.linguee.com/english-spanish/search?source=auto&query=' + getWord);
-        var win2 = window.open(' https://www.wordreference.com/es/en/translation.asp?spen=' + getWord);
+        var win = window.open('https://translate.google.com/#view=home&op=translate&sl=es&tl=en&text=' + getWord);
+        var win = window.open('https://www.collinsdictionary.com/dictionary/spanish-english/' + getWord);
+        var win = window.open('https://www.linguee.com/english-spanish/search?source=auto&query=' + getWord);
+        var win = window.open(' https://www.wordreference.com/es/en/translation.asp?spen=' + getWord);
         var win = window.open('https://www.spanishdict.com/examples/' + getWord);
         var win = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=spa&to=eng');
       }
@@ -259,7 +162,131 @@
       }
 
     </script>
-    <div id="theDiv" style="color: #4ef129; display: none;">
+    
+
+    <style>
+
+      a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      pre, xmp, plaintext, listing {
+        display: block;
+        font-family: monospace;
+        white-space: pre;
+        margin: 1em 0px;
+        transition: color 5s ease-in-out;
+        -moz-transition: color 5s ease-in-out;
+        text-decoration: none;
+        -webkit-animation: zomg 7s infinite;
+        animation: zomg 11s infinite;
+      }
+      .wrapper { 
+        height: 11%;
+        width: 11%;
+        left:0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 45px;
+        background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+        background-size: 1800% 1800%;
+        -webkit-animation: rainbow 18s ease infinite;
+        -z-animation: rainbow 18s ease infinite;
+        -o-animation: rainbow 18s ease infinite;
+        animation: rainbow 18s ease infinite;}
+      @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @keyframes rainbow { 
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      .theButton{
+        margin-top: 14px;
+        background-color:skyblue !important;
+      }
+      .theButton:hover{
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+        background-color:#e10505 !important;
+      }
+      .theLabel{
+        transition: color 5s ease-in-out;
+        -moz-transition: color 5s ease-in-out;
+        text-decoration: none;
+        -webkit-animation: zomg 7s infinite;
+        animation: zomg 11s infinite;
+      }
+      @-webkit-keyframes zomg {
+        0%, 100% { color: #7ccdea; }
+        16%      { color: #0074d9; }
+        32%      { color: #2ecc40; }
+        48%      { color: #ffdc00; }
+        64%      { color: #b10dc9; }
+        80%      { color: #ff4136; }
+      }
+      @keyframes zomg {
+        0%, 100% { color: #7ccdea; }
+        16%      { color: #0074d9; }
+        32%      { color: #2ecc40; }
+        48%      { color: #ffdc00; }
+        64%      { color: #b10dc9; }
+        80%      { color: #ff4136; }
+      }
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .submit {
+        width: 100%;
+        background-color: #A10000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .submit:hover {
+        background-color: #921010;
+      }
+      .grayBg {
+        border-radius: 5px;
+        padding: 20px;
+      }
+      #haktext{
+        color:white;
+      }
+      element.style {
+        color: #6c5a5a !important;
+      }
+      .textColor{
+        color:#c7c7c7 !important;
+      }
+    </style>
+    
       <xmp>
         <html>
           <head>
@@ -399,13 +426,36 @@
               </style>
 
               <input class="submit theButton wrapper" onclick="openTab()" style="" type="submit" value="Find (MORE)" />
+              
               <input class="submit theButton wrapper" onclick="openTabTwo()" style="" type="submit" value="Find (less)">
+              
             </div>
+            
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            
             <div>
-              <span style="color: #471d1d;">You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility)<span class="theLabel" style="font-style:italic">I'm not clunky anymore!</span><br><br> See source code 
-                <span style="color:#E32E2E" class="theLabel" id ="textHere">here</span> </span>
-              <br> <span><span style="color #471d1d" >Or</span> <a href="https://jsfiddle.net/primalshade/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">here</span></a> </span>
+              <span style="color: #471d1d;">
+                You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility)
+                <span class="theLabel" style="font-style:italic">
+                  I'm not clunky anymore!
+                </span>
+                <br><br> 
+                See source code 
+                <span style="color:#E32E2E" class="theLabel" id ="textHere">
+                  here
+                </span> 
+              </span>
+              
+              <br /> 
+              
+              <span>
+                <span style="color #471d1d" >Or
+                </span> 
+                <a href="https://jsfiddle.net/erenozten/mf60z5kr/4/" target="_blank"><span style="text-decoration:none !important" class="theLabel">
+                  here
+                </span>
+                </a> 
+              </span>
             </div>
 
             <script>
@@ -432,6 +482,7 @@
                 document.getElementById("theWord").setAttribute("value", "word");
               }
               */
+              
               function focusInBosalt() {
                 document.getElementById("theWord").setAttribute("value", "");
               }
@@ -440,14 +491,14 @@
                 var getWord = document.getElementById('theWord').value;
                 var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
                 var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
-                var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
-                var win2 = window.open('https://www.etymonline.com/search?q=' + getWord);
-                var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
-                var win2 = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
-                var win2 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
-                var win2 = window.open('http://www.thefreedictionary.com/' + getWord);
-                var win2 = window.open('http://www.learnersdictionary.com/definition/' + getWord + '#');
-                var win2 = window.open('https://www.ldoceonline.com/search/?q=' + getWord);
+                var win = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+                var win = window.open('https://www.etymonline.com/search?q=' + getWord);
+                var win = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+                var win = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
+                var win = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
+                var win = window.open('http://www.thefreedictionary.com/' + getWord);
+                var win = window.open('http://www.learnersdictionary.com/definition/' + getWord + '#');
+                var win = window.open('https://www.ldoceonline.com/search/?q=' + getWord);
               }
 
               function openTabTwo(url) {
