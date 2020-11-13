@@ -1,0 +1,624 @@
+<!--Vocabulary Finder-->
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="grayBg" style="border: 1px solid blue; height: 681px; margin-left: 0px;">
+      <div class="theLabel">
+        <label class="theLabel">Cast a Magic </label>
+        <input class="theLabel" id="theWord" onclick="focusInBosalt()" style="color: black !important; font-size: 55px; font-style: italic font-style: italic;" type="text" value="kaboom!" />
+      </div>
+<div class="theLabel">
+        <label class="theLabel">Status</label>
+        <select class="theLabel" id="" name="country">
+          <option disabled="" selected="">Are you feeling lucky?</option>
+          <option value="">I've just found 10$ on the ground at work</option>
+          <option value="">I'm Feeling Lucky</option>
+        </select>
+      </div>
+<input class="submit theButton wrapper" onclick="openTabEnglishSmall()" type="submit" value="ENGLISH (SMALL)" />
+      <input class="submit theButton wrapper" onclick="openTabEnglishBig()" type="submit" value="ENGLISH (LARGE)" />
+      <input class="submit theButton wrapper" onclick="openTabSpanish()" type="submit" value="SPANISH" />
+      <input class="submit theButton wrapper" onclick="openTabGerman()" type="submit" value="GERMAN" />
+      <input class="submit theButton wrapper" onclick="openTabFrench()" type="submit" value="FRENCH" />
+      <input class="submit theButton wrapper" onclick="openTabRussian()" type="submit" value="RUSSIAN" />
+      <input class="submit theButton wrapper" onclick="openTabLatin()" type="submit" value="LATIN" />
+      <input class="submit theButton wrapper" onclick="openTabTurkish()" type="submit" value="TURKISH" />
+    </div>
+<br />
+    <br />
+    <br />
+    <br />
+    
+    <div>
+      <span class="textColor" style="color: #471d1d;">
+        You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility) 
+        <span class="theLabel" style="font-style: italic;">
+          I'm not clunky anymore!
+        </span>
+        <br /><br /> 
+        See source code 
+        <span class="theLabel" id="textHere" style="color: #e32e2e;">
+          here
+        </span> 
+      </span>
+      
+      <br /> 
+      <span>
+      <span class="textColor">
+        Or
+      </span> 
+      <a href="https://jsfiddle.net/erenozten/mf60z5kr/4/" target="_blank">
+      <span class="theLabel" style="text-decoration: none !important;">
+        here
+        </span>
+        </a> 
+      </span>
+    </div>
+<div id="theDiv" style="color: #4ef129; display: none;">
+
+    <script>
+      var sayi = 0;
+      $(document).ready(function(){
+        $("#textHere").click(function(){
+          if(sayi %2 == 0)
+          {
+            $("#theDiv").show(300);
+            sayi++;
+          }
+          else
+          {
+            $("#theDiv").hide(300);
+            sayi++;
+          }
+        });
+      });
+      //      document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
+
+      function focusInBosalt() {
+        document.getElementById("theWord").value = "";
+
+        console.log("Testing");
+      }
+
+      function openTabEnglishBig(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "root";
+        }
+        
+        var win0 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win1 = window.open('http://www.thefreedictionary.com/' + getWord);
+        var win2 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
+        var win3 = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
+        var win4 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win5 = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win6 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+        var win7 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
+        var win8 = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+      }
+
+      function openTabEnglishSmall(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "root";
+        }
+        
+        var win0 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win1 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
+        var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+        var win3 = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win4 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win5 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853'); 
+        var win6 = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+      }
+
+      // function openTabThree(url) {
+      //   var getWord = document.getElementById('theWord').value;
+      //   var win = window.open('https://translate.google.com/#en/tr/' + getWord);
+      //   var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
+      //   var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+      //   var win = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+      //   var win = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+      // }
+
+      function openTabGerman(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "schlafen";
+        }
+        
+        var win0 = window.open('https://www.google.com/search?q=' + getWord + '&oq=' + getWord + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win1 = window.open('https://tatoeba.org/deu/sentences/search?query=' + getWord + '&from=deu&to=eng');
+        var win2 = window.open('https://www.dict.cc/?s=' + getWord + '&from=deu&to=eng');
+        var win3 = window.open('https://www.collinsdictionary.com/dictionary/german-english/' + getWord);
+        var win4 = window.open('https://www.linguee.com/german-english/search?source=german&query=' + getWord);
+        var win5 = window.open('https://en.langenscheidt.com/german-english/' + getWord);
+        var win6 = window.open('https://dictionary.cambridge.org/dictionary/german-english/' + getWord); 
+         var win1 = window.open('https://www.google.com/search?q=' + getWord + '' + '&sxsrf=ALeKk03MX6wJBe-Oypi711Dn24LKiD_qig:1604346799400&source=lnms&tbm=isch&sa=X&ved=2ahUKEwis88vI0eTsAhU1i8MKHef5BQ8Q_AUoAXoECAwQAw&biw=1920&bih=937' + getWord);
+        var win8 = window.open('https://translate.google.com/#de/en/' + getWord);
+      }
+
+      function openTabTurkish(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "kitap";
+        }
+        
+        var win8 = window.open('https://www.google.com/search?q=' + getWord + ' nedir' + '&oq=' + getWord  + ' nedir' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var bilgiPortal3 = window.open('http://www.osmanlicaturkce.com/?k=' + getWord +'&t=%40');
+        var bilgiPortal3 = window.open('http://sozluk.bilgiportal.com/arama/yazi/' + getWord);
+        var nedir4 = window.open('http://www.nedir.com/' + getWord);
+        var nedir4 = window.open('http://www.birsozluk.com/' + getWord);
+        var googleGorseller2 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwixoaGd9o7XAhVHWxQKHR09AU8Q_AUICigB&biw=2133&bih=1054');
+        var wiktionary5 = window.open('https://tr.wiktionary.org/wiki/' + getWord);
+        // var tdk6 = window.open('http://www.tdk.gov.tr/index.php?option=com_gts&kelime=' + getWord);
+        var wikiwand = window.open('https://tr.wikipedia.org/wiki/' + getWord);    
+      }
+
+        function openTabSpanish(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "trabajar";
+        }
+        var win8 = window.open('https://www.google.com/search?q=' + getWord + '' + '&oq=' + getWord  + '' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win1 = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=spa&to=eng');
+        var win2 = window.open('https://www.spanishdict.com/examples/' + getWord);
+        var win3 = window.open(' https://www.wordreference.com/es/en/translation.asp?spen=' + getWord);
+        var win4 = window.open('https://www.linguee.com/english-spanish/search?source=auto&query=' + getWord);
+        var win5 = window.open('https://www.collinsdictionary.com/dictionary/spanish-english/' + getWord);
+        var win6 = window.open('https://translate.google.com/#view=home&op=translate&sl=es&tl=en&text=' + getWord);
+        var win7 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
+        var win8 = window.open('https://www.spanishdict.com/translate/' + getWord);
+      }
+
+      function openTabFrench(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "bonjour";
+        }
+        
+        var win0 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win1 = window.open('https://tatoeba.org/eng/sentences/search?query=' + getWord + '&from=fra&to=eng');
+        var win3 = window.open('https://www.wordreference.com/fren/' + getWord);  
+        var win4 = window.open('https://www.linguee.com/french-english/search?source=auto&query=' + getWord);
+        var win5 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
+        var win6 = window.open('https://translate.google.com/#view=home&op=translate&sl=fr&tl=en&text=' + getWord);
+      }
+      
+      function openTabLatin(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "manus";
+        }
+        
+        var win0 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win1 = window.open('https://www.latinitium.com/latin-dictionaries?t=lsn27978,lsn27977,lsn27976');
+        var win1 = window.open('https://www.online-latin-dictionary.com/latin-english-dictionary.php?parola=' + getWord);
+        var win1 = window.open('https://www.latin-english.com/latin/' + getWord);
+        var win1 = window.open('https://latin-dictionary.net/search/latin/' + getWord);        
+        var win1 = window.open('https://www.google.com/search?q=' + getWord + '' + '&sxsrf=ALeKk03MX6wJBe-Oypi711Dn24LKiD_qig:1604346799400&source=lnms&tbm=isch&sa=X&ved=2ahUKEwis88vI0eTsAhU1i8MKHef5BQ8Q_AUoAXoECAwQAw&biw=1920&bih=937' + getWord);
+        var win6 = window.open('https://translate.google.com/#view=home&op=translate&sl=la&tl=en&text=' + getWord);
+      }
+      
+      function openTabRussian(url) {
+        var getWord = document.getElementById('theWord').value;
+        
+        //çalışan
+        var text = document.getElementById("theWord").value;
+        if(text == "kaboom!")
+        {
+        getWord = "книга";
+        }
+        
+        var win0 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win1 = window.open('https://en.openrussian.org/' + getWord);    
+        var win2 = window.open('https://www.wordreference.com/ruen/' + getWord);
+        var win3 = window.open('https://tr-ex.me/translation/russian-english/' + getWord);
+        var win4 = window.open('https://en.bab.la/dictionary/russian-english/' + getWord);    
+        var win5 = window.open(' https://context.reverso.net/translation/russian-english/' + getWord);    
+        var win6 = window.open('https://en.glosbe.com/ru/en/' + getWord);
+        var win7 = window.open('https://www.dict.com/russian-english/' + getWord);    
+        var win8 = window.open('https://en.pons.com/translate/russian-english/' + getWord);    
+        var win9 = window.open('https://dictionary.reverso.net/russian-english/' + getWord);    
+        var win10 = window.open('https://www.google.com/search?q=' + getWord + '' + '&sxsrf=ALeKk03MX6wJBe-Oypi711Dn24LKiD_qig:1604346799400&source=lnms&tbm=isch&sa=X&ved=2ahUKEwis88vI0eTsAhU1i8MKHef5BQ8Q_AUoAXoECAwQAw&biw=1920&bih=937' + getWord);
+        var win11 = window.open('https://www.linguee.com/english-russian/search?source=russian&query=' + getWord);
+        var win12 = window.open('https://translate.google.com/#view=home&op=translate&sl=ru&tl=en&text=' + getWord);
+        var win13 = window.open('https://www.russiandict.net/translate/' + getWord);     
+      }
+    </script>
+
+    <style>
+      a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      pre, xmp, plaintext, listing {
+        display: block;
+        font-family: monospace;
+        white-space: pre;
+        margin: 1em 0px;
+        transition: color 5s ease-in-out;
+        -moz-transition: color 5s ease-in-out;
+        text-decoration: none;
+        -webkit-animation: zomg 7s infinite;
+        animation: zomg 11s infinite;
+      }
+      .wrapper { 
+        height: 11%;
+        width: 11%;
+        left:0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 45px;
+        background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+        background-size: 1800% 1800%;
+        -webkit-animation: rainbow 18s ease infinite;
+        -z-animation: rainbow 18s ease infinite;
+        -o-animation: rainbow 18s ease infinite;
+        animation: rainbow 18s ease infinite;}
+      @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      @keyframes rainbow { 
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+      }
+      .theButton{
+        margin-top: 14px;
+        background-color:skyblue !important;
+      }
+      .theButton:hover{
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+        background-color:#e10505 !important;
+      }
+      .theLabel{
+        transition: color 5s ease-in-out;
+        -moz-transition: color 5s ease-in-out;
+        text-decoration: none;
+        -webkit-animation: zomg 7s infinite;
+        animation: zomg 11s infinite;
+      }
+      @-webkit-keyframes zomg {
+        0%, 100% { color: #7ccdea; }
+        16%      { color: #0074d9; }
+        32%      { color: #2ecc40; }
+        48%      { color: #ffdc00; }
+        64%      { color: #b10dc9; }
+        80%      { color: #ff4136; }
+      }
+      @keyframes zomg {
+        0%, 100% { color: #7ccdea; }
+        16%      { color: #0074d9; }
+        32%      { color: #2ecc40; }
+        48%      { color: #ffdc00; }
+        64%      { color: #b10dc9; }
+        80%      { color: #ff4136; }
+      }
+      input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .submit {
+        width: 100%;
+        background-color: #A10000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .submit:hover {
+        background-color: #921010;
+      }
+      .grayBg {
+        border-radius: 5px;
+        padding: 20px;
+      }
+      #haktext{
+        color:white;
+      }
+      element.style {
+        color: #6c5a5a !important;
+      }
+      .textColor{
+        color:#c7c7c7 !important;
+      }
+    </style>
+    
+      <xmp>
+        <html>
+          <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          </head>
+          <body>
+            <div class="grayBg" style="border: 21px #00ec73; height: 681px; margin-left: 0px;">
+              <div class="theLabel">
+                <label class="theLabel">Cast a Magic </label>
+                <input class="theLabel" id="theWord" onclick="focusInBosalt()" style="font-style: italic;" type="text" value="kaboom!" />
+              </div>
+<div class="theLabel">
+                <label class="theLabel">Status</label>
+                <select class="theLabel" id="" name="country">
+                  <option disabled="" selected="">Are you feeling lucky?</option>
+                  <option value="">I found 10$ on the ground at work</option>
+                  <option value="">I'm Feeling Lucky</option>
+                </select>
+              </div>
+<style>
+                a:-webkit-any-link {
+                  color: -webkit-link;
+                  cursor: pointer;
+                  text-decoration: none;
+                }
+                pre, xmp, plaintext, listing {
+                  display: block;
+                  font-family: monospace;
+                  white-space: pre;
+                  margin: 1em 0px;
+                  transition: color 5s ease-in-out;
+                  -moz-transition: color 5s ease-in-out;
+                  text-decoration: none;
+                  -webkit-animation: zomg 7s infinite;
+                  animation: zomg 11s infinite;
+                }
+                .wrapper { 
+                  height: 11%;
+                  width: 11%;
+                  left:0;
+                  right: 0;
+                  top: 0;
+                  bottom: 0;
+                  height: 45px;
+                  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+                  background-size: 1800% 1800%;
+                  -webkit-animation: rainbow 18s ease infinite;
+                  -z-animation: rainbow 18s ease infinite;
+                  -o-animation: rainbow 18s ease infinite;
+                  animation: rainbow 18s ease infinite;}
+                @-webkit-keyframes rainbow {
+                  0%{background-position:0% 82%}
+                  50%{background-position:100% 19%}
+                  100%{background-position:0% 82%}
+                }
+                @-moz-keyframes rainbow {
+                  0%{background-position:0% 82%}
+                  50%{background-position:100% 19%}
+                  100%{background-position:0% 82%}
+                }
+                @-o-keyframes rainbow {
+                  0%{background-position:0% 82%}
+                  50%{background-position:100% 19%}
+                  100%{background-position:0% 82%}
+                }
+                @keyframes rainbow { 
+                  0%{background-position:0% 82%}
+                  50%{background-position:100% 19%}
+                  100%{background-position:0% 82%}
+                }
+                .theButton{
+                  margin-top: 14px;
+                  background-color:skyblue !important;
+                }
+                .theButton:hover{
+                  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+                  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+                  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+                  transition: all 0.4s ease 0s;
+                  background-color:#e10505 !important;
+                }
+                .theLabel{
+                  transition: color 5s ease-in-out;
+                  -moz-transition: color 5s ease-in-out;
+                  text-decoration: none;
+                  -webkit-animation: zomg 7s infinite;
+                  animation: zomg 11s infinite;
+                }
+                @-webkit-keyframes zomg {
+                  0%, 100% { color: #7ccdea; }
+                  16%      { color: #0074d9; }
+                  32%      { color: #2ecc40; }
+                  48%      { color: #ffdc00; }
+                  64%      { color: #b10dc9; }
+                  80%      { color: #ff4136; }
+                }
+                @keyframes zomg {
+                  0%, 100% { color: #7ccdea; }
+                  16%      { color: #0074d9; }
+                  32%      { color: #2ecc40; }
+                  48%      { color: #ffdc00; }
+                  64%      { color: #b10dc9; }
+                  80%      { color: #ff4136; }
+                }
+                input[type=text], select {
+                  width: 100%;
+                  padding: 12px 20px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                }
+                .submit {
+                  width: 100%;
+                  background-color: #A10000;
+                  color: white;
+                  padding: 14px 20px;
+                  margin: 8px 0;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+                .submit:hover {
+                  background-color: #921010;
+                }
+                .grayBg {
+                  border-radius: 5px;
+                  padding: 20px;
+                }
+                #haktext{
+                  color:white;
+                }
+              </style>
+
+              <input class="submit theButton wrapper" onclick="openTab()" type="submit" value="Find (MORE)" />
+              
+              <input class="submit theButton wrapper" onclick="openTabTwo()" type="submit" value="Find (less)" />
+              
+            </div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            
+            <div>
+              <span style="color: #471d1d;">
+                You have to allow pop-up to open all tabs properly. Thank you so much for using me! Maybe I'm a clunky app, but I'm handy! (Please use Google Chrome for more compatibility)
+                <span class="theLabel" style="font-style: italic;">
+                  I'm not clunky anymore!
+                </span>
+                <br /><br /> 
+                See source code 
+                <span class="theLabel" id="textHere" style="color: #e32e2e;">
+                  here
+                </span> 
+              </span>
+              
+              <br /> 
+              
+              <span>
+                <span>Or
+                </span> 
+                <a href="https://jsfiddle.net/erenozten/mf60z5kr/4/" target="_blank"><span class="theLabel" style="text-decoration: none !important;">
+                  here
+                </span>
+                </a> 
+              </span>
+            </div>
+<script>
+              var sayi = 0;
+              $(document).ready(function(){
+                $("#textHere").click(function(){
+                  if(sayi %2 == 0)
+                  {
+                    $("#theDiv").show(300);
+                    sayi++;
+                  }
+                  else
+                  {
+                    $("#theDiv").hide(300);
+                    sayi++;
+                  }
+                });
+              });
+
+              //document.getElementById("theWord").addEventListener("focusout", focusOutDoldur);
+
+              /*
+              function focusOutDoldur() {
+                document.getElementById("theWord").setAttribute("value", "word");
+              }
+              */
+              
+              function focusInBosalt() {
+                document.getElementById("theWord").setAttribute("value", "");
+              }
+
+              function openTab(url) {
+                var getWord = document.getElementById('theWord').value;
+                var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+                var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
+                var win = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+                var win = window.open('https://www.etymonline.com/search?q=' + getWord);
+                var win = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+                var win = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
+                var win = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
+                var win = window.open('http://www.thefreedictionary.com/' + getWord);
+                var win = window.open('http://www.learnersdictionary.com/definition/' + getWord + '#');
+                var win = window.open('https://www.ldoceonline.com/search/?q=' + getWord);
+              }
+
+              function openTabTwo(url) {
+                var getWord = document.getElementById('theWord').value;
+                var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+                //var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
+                var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+                //var win2 = window.open('https://www.etymonline.com/search?q=' + getWord);
+                //var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+                var win2 = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
+                var win2 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
+                var win2 = window.open('http://www.thefreedictionary.com/' + getWord);
+              }
+
+              function openTabThree(url) {
+                var getWord = document.getElementById('theWord').value;
+                var win = window.open('https://translate.google.com/#en/tr/' + getWord);
+                var win = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwick6L186HdAhXvz4UKHSEcCC0Q_AUICigB&biw=1745&bih=857');
+                var win = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+                var win2 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+                var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+              }
+            </script>     
+          </body>
+        </html>
+        </xmp></div>
+</body></html>
+  
+
+
+
+
+
