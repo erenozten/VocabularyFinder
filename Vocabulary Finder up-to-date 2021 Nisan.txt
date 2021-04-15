@@ -94,15 +94,24 @@
         getWord = "root";
         }
         
-        var win0 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
-        var win1 = window.open('http://www.thefreedictionary.com/' + getWord);
-        var win2 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
-        var win3 = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
-        var win4 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
-        var win5 = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win15 = window.open('https://www.dictionary.com/browse/' + getWord + '?s=t');
+        var win14 = window.open('https://www.goodwordguide.com/define/' + getWord);
+        var win13 = window.open('https://www.merriam-webster.com/dictionary/' + getWord);
+        var win12 = window.open('https://www.yourdictionary.com/' + getWord);
+        var win11 = window.open('https://www.lexico.com/definition/' + getWord);
+        var win10 = window.open('http://www.thefreedictionary.com/' + getWord);
+        var win9 = window.open('https://www.macmillandictionary.com/dictionary/british/' + getWord + '_1');
+        var win8 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
+        var win7 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
         var win6 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
-        var win7 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
-        var win8 = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+        var win5 = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win4 = window.open('https://www.ldoceonline.com/dictionary/' + getWord);
+        var win3 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win2 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853');
+        var win1 = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+        
+
+        
       }
 
       function openTabEnglishSmall(url) {
@@ -116,14 +125,13 @@
         }
         
         var win0 = window.open('https://www.google.com/search?q=' + getWord + ' meaning' + '&oq=' + getWord  + ' meaning' + '&aqs=chrome..69i57j35i39j69i60l3j69i65j69i60l2.511j0j7&sourceid=chrome&ie=UTF-8');
-        var win1 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
-        var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
-        var win3 = window.open('https://www.etymonline.com/search?q=' + getWord);
-        var win4 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
-        var win7 = window.open('https://www.ldoceonline.com/dictionary/' + getWord);
-        
-        var win5 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853'); 
-        var win6 = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
+        var win7 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
+        var win6 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
+        var win5 = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win4 = window.open('https://www.ldoceonline.com/dictionary/' + getWord);
+        var win3 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
+        var win2 = window.open('https://www.google.com.tr/search?q=' + getWord + '&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjT6bWV_ujeAhVqMewKHT7fAewQ_AUIDigB&biw=1745&bih=853'); 
+        var win1 = window.open('http://tureng.com/tr/turkce-ingilizce/' + getWord);
       }
 
       // function openTabThree(url) {
