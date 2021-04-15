@@ -1,4 +1,10 @@
 <!--Vocabulary Finder-->
+
+
+<!--Nisanda filmlerden kelime alırken düzenlendi. iki ingilizce sözlük linki de dünzenlendi. ikisi de aynı sırayla aynı linkleri açıyor. büyük sözlük linkine daha çok sözlük linki eklendi-->
+
+
+
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
