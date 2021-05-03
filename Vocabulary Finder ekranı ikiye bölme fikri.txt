@@ -149,8 +149,8 @@
         getWord = "root";
         }
         var win5 = window.open('https://www.yourdictionary.com/' + getWord);
-        var win4 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
-        var win3 = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win4 = window.open('https://www.etymonline.com/search?q=' + getWord);
+        var win3 = window.open('https://www.collinsdictionary.com/dictionary/english/' + getWord);
         var win2 = window.open('https://www.vocabulary.com/dictionary/' + getWord);
         var win1 = window.open('https://dictionary.cambridge.org/dictionary/english/' + getWord);
       }
